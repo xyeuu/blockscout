@@ -78,7 +78,7 @@ defmodule Explorer.ExchangeRates.Source.Mobula do
   @impl Source
   def source_url(input) do
     symbol = input
-    "#{base_url()}/market/data&asset=#{symbol}"
+    "#{base_url()}/market/data?symbol=#{symbol}"
   end
 
   @spec secondary_history_source_url() :: String.t()
