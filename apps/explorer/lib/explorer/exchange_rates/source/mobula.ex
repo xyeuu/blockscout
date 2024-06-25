@@ -65,7 +65,7 @@ defmodule Explorer.ExchangeRates.Source.Mobula do
 
   @impl Source
   def source_url do
-    "#{base_url()}/market/data?asset=#{Explorer.coin()}"
+    "#{base_url()}/market/data?asset=#{Explorer.coin_name()}"
   end
 
   @impl Source
